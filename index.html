@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./index.js"></script>
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-image">
+        <div class="card-credit">
+          <div class="logo-credit">
+            <figure>
+              <img src="./images/card-logo.svg" alt="logo-credit">
+            </figure>
+          </div>
+          <div class="description-credit">
+            <h2>0000 0000 0000 0000</h2>
+            <div class="names-credit">
+              <p>
+                Jane appleseed
+              </p>
+              <p>
+                00/00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-back">
+          <p>
+            000
+          </p>
+        </div>
+      </div>
+      <div class="container-form">
+        <form action="#" class="form" id="form">
+          <div class="inputs">
+            <label for="name">Cardholder name</label>
+            <input type="text" name="name" id="name" maxlength="18" autocomplete="cc-csc" placeholder="e.g. Eric Choo">
+            <span id="nameErrror" class="error"></span>
+          </div>
+          <div class="inputs">
+            <label for="number">Card number</label>
+            <input type="text" name="number" id="number" minlength="16" maxlength="16"
+            autocomplete="cc-csc" placeholder="e.g. 1234 5678 9123 0000">
+            <span id="numberError" class="error"></span>
+          </div>
+          <div class="container-dates">
+            <div class="mm">
+              <label for="exp">Exp, date (MM/YY)</label>
+              <div class="dates">
+                <input type="text" name="date_month" id="date" minlength="2" maxlength="2" autocomplete="cc-csc" placeholder="MM">
+                <input type="text" name="date_year" id="date" minlength="2" maxlength="2" autocomplete="cc-csc" placeholder="YY">
+                <span id="expError" class="error"></span>
+              </div>
+            </div>
+            <div class="cvc">
+              <label for="cvc">cvc</label>
+              <input type="text" name="pin" id="pin" minlength="3" maxlength="3" autocomplete="cc-csc" placeholder="e.g. 123">
+              <span id="cvcError" class="error"></span>
+            </div>
+          </div>
+          <button type="submit" id="submit">Confirm</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
