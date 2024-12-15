@@ -161,8 +161,6 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
-    box-sizing: border-box;
-    overflow: hidden;
     transition: .6s ease;
 }
 
@@ -170,7 +168,7 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    margin: 0px 0px 40px;
+    margin: 0px 0px 30px;
     flex-direction: column;
 }
 
@@ -206,16 +204,15 @@ body {
 }
 
 .container-dates {
-    gap: 50px;
     width: 100%;
     height: auto;
     display: flex;
-    overflow: hidden;
     justify-content: space-between;
 }
 
 .mm {
-    width: auto;
+    width: 100%;
+    max-width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -256,9 +253,31 @@ body {
     border: 1px solid hsl(249, 99%, 64%);
 }
 
+.errorDate {
+    width: 100%;
+    height: auto;
+    color: red;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 45px;
+    position: absolute;
+}
+
+.errorPin {
+    width: 100%;
+    height: auto;
+    color: red;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 4px;
+    position: relative;
+}
+
 .cvc {
     width: auto;
     height: auto;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 35px;
 }
 
@@ -272,7 +291,8 @@ body {
 }
 
 .cvc input {
-    width: 185px;
+    width: 100%;
+    max-width: 185px;
     height: 43.19px;    
     font-size: 16px;
     font-weight: 500;
@@ -317,4 +337,5 @@ body {
     font-weight: 400;
     margin-top: 5px;
     margin-right: 185px;
+    position: relative;
 }
