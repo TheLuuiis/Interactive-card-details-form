@@ -138,11 +138,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
         const numberValue = number.value.trim();
         if (!numberValue) {
-            numberError.textContent = "Can't be blank";
+            numberError.textContent = "Can't be blank.";
             number.style.border = '1px solid red';
             isValid = false;
         } else if (!isValidNumber(numberValue)) {
-            numberError.textContent = 'Invalid format, numbers only';
+            numberError.textContent = 'Invalid format, numbers only.';
             number.style.border = '1px solid red';
             isValid = false;
         } else {
