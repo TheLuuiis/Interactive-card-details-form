@@ -339,3 +339,52 @@ body {
     margin-right: 185px;
     position: relative;
 }
+
+/* Container - Succes */
+.container-succes {
+    width: 450px;
+    height: auto;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-succes figure {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.container-succes h1 {
+    color: hsl(278, 68%, 11%);
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.container-succes p {
+    color: hsl(278, 68%, 11%);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.container-succes button {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background-color: hsl(278, 68%, 11%);
+    cursor: pointer;
+    transition: .6s ease;
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid transparent;
+}

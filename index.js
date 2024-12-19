@@ -6,11 +6,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const number = document.getElementById('number');
     const dateInputs = document.querySelectorAll('.date');
     const pin = document.getElementById('pin');
+    const containerSucces = document.getElementById('containerSucces');
 
     const cardNumber = document.getElementById('cardNumber');
     const cardName = document.getElementById('cardName');
     const cardDate = document.getElementById('cardDate');
-    const cardPin = document.getElementById('cardPin');
     const cardPinDate = document.getElementById('cardPinDate'); 
 
     const nameError = document.getElementById('nameError');
@@ -180,10 +180,12 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
             pinError.textContent = '';
             pin.style.border = '';
-        }
+        };
 
         if (isValid) {
-            alert('Form submitted successfully!');
-        }
+            form.style.display = 'none';
+            containerSucces.style.display = 'flex';
+        };
+
     });
 });
